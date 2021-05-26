@@ -31,6 +31,7 @@ done
 
 
 protoc \
+--plugin=protoc-gen-dart=$HOME/.pub-cache/bin/protoc-gen-dart \
 --dart_out="./lib/gen" \
 --swift_out=./ios/Classes \
 "$PROTO_OUT_FILE"
